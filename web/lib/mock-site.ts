@@ -79,17 +79,47 @@ export const mockSite: SitePayload = {
   facilities: [
     { id: "preview-library", title: "Library", description: "A welcoming space for reading, research, and discovery.", image: "/assets/images/gallery/library.jpg" },
     { id: "preview-computer-lab", title: "Computer Lab", description: "Students build digital skills through guided practice.", image: "/assets/images/gallery/computerlab.jpg" },
+    { id: "preview-classroom", title: "Modern Classrooms", description: "A space for movement, teamwork, and outdoor play.", image: "/assets/images/gallery/reading.jpg" },
+    { id: "preview-music-studio", title: "Music Studio", description: "A space for movement, teamwork, and outdoor play.", image: "/assets/images/gallery/playground.jpg" },
+    { id: "preview-bus", title: "School Bus", description: "A space for movement, teamwork, and outdoor play.", image: "/assets/images/gallery/bus.jpg" },
     { id: "preview-playground", title: "Playground", description: "A space for movement, teamwork, and outdoor play.", image: "/assets/images/gallery/playground.jpg" },
+
   ],
   academicsApproach: [
     { id: "preview-core", title: "Strong foundations", description: "Clear teaching helps students grow confidence in core subjects." },
     { id: "preview-whole-child", title: "Whole-child learning", description: "Creative arts, sports, and character education complement classroom learning." },
+      {id: "preview-curriculum",
+      title: "Curriculum",
+      description:
+        "A structured, age-appropriate curriculum that builds strong foundations in literacy, numeracy, science and the arts.",
+    },
+      {id: "preview-co-curricular",
+      title: "Co-curricular activities",
+      description:
+        "Clubs and societies that let pupils explore interests beyond the classroom.",
+    },
+     { id: "preview-sports",
+      title: "Sports",
+      description:
+        "Regular physical education, team games and inter-house competitions.",
+    },
+    {id: "preview-creative-arts",
+      title: "Creative arts",
+      description:
+        "Art, music, drama and dance to build expression and confidence.",
+    },
+    { id: "preview-leadership",
+      title: "Leadership development",
+      description:
+        "Prefect roles, public speaking and service projects for every age group.",
+    },
+
   ],
   academicsSubjects: ["English Language", "Mathematics", "Science", "Creative Arts", "ICT", "Physical Education"],
   testimonials: [
     { id: "preview-testimonial-1", name: "A School Parent", childClass: "Primary", photo: "/assets/images/client1.jpg", quote: "Our child is excited to learn and feels supported every day." },
     { id: "preview-testimonial-2", name: "A School Parent", childClass: "Pre-School", photo: "/assets/images/client2.jpg", quote: "We appreciate the caring teachers and welcoming community." },
-    { id: "preview-testimonial-3", name: "A School Parent", childClass: "Secondary", photo: "/assets/images/client3.jpg", quote: "We have seen our child grow in confidence and independence." },
+    { id: "preview-testimonial-3", name: "A School Parent", childClass: "College", photo: "/assets/images/client3.jpg", quote: "We have seen our child grow in confidence and independence." },
   ],
   fees: {
     levels: {
