@@ -1,0 +1,11 @@
+{
+  "name": "texcel-schools",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix web",
+    "dev:web": "npm run dev --prefix web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
