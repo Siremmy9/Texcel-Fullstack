@@ -4,7 +4,7 @@ import { AdmissionsView } from "@/components/views/admissions";
 
 export const metadata: Metadata = {
   title: "Admissions",
-  description: "Apply for Crèche, Nursery, Primary or Secondary admission at Texcel Schools.",
+  description: "Apply for Crèche, Pre-school, Primary or College admission at Texcel Schools.",
 };
 
 export default function AdmissionsPage() {

@@ -3,7 +3,7 @@ import { SchoolsView } from "@/components/views/schools";
 
 export const metadata: Metadata = {
   title: "Our schools",
-  description: "Crèche, Nursery, Primary and Secondary at Texcel Schools, Lagos.",
+  description: "Crèche, Pre-school, Primary and College at Texcel Schools, Lagos.",
 };
 
 export default function SchoolsPage() {

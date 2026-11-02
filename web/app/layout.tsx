@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Texcels Schools",
   },
   description:
-    "Texcels Schools offers Crèche, Nursery, Primary and Secondary education on the Lekki-Epe Expressway, Lagos.",
+    "Texcels Schools offers Crèche, Pre-school, Primary and College education on the Lekki-Epe Expressway, Lagos.",
   icons: { icon: "/assets/icons/favicon.svg" },
 };
 

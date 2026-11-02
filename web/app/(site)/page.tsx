@@ -5,7 +5,7 @@ const jsonLd = {
   "@type": "School",
   name: "Texcel Schools",
   slogan: "Raising The Joy of Nations",
-  description: "Crèche, Pre School, Primary and Secondary school on the Lekki-Epe Expressway, Lagos, Nigeria.",
+  description: "Crèche, Pre School, Primary and College school on the Lekki-Epe Expressway, Lagos, Nigeria.",
   address: {
     "@type": "PostalAddress",
     streetAddress: "1, Texcel Close, Balogun Estate, Majek/Ajah",

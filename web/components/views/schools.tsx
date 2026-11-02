@@ -8,7 +8,7 @@ export function SchoolsView() {
     <SiteData>
       {(site) => (
         <main id="main">
-          <PageHero title="Our schools" text="Crèche, Nursery, Primary and Secondary. One family, four stages." />
+          <PageHero title="Our schools" text="Crèche, Pre-school, Primary and College. One family, four stages." />
           <section className="mx-auto max-w-site px-5 py-20">
             <LevelBlocks site={site} />
           </section>
