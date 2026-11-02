@@ -10,7 +10,7 @@ export const mockSite: SitePayload = {
     location: "13/15, Olabisi Seriki Street (By Celestial Church) Opposite Fara park Estate, Abijo Lekki-Epe Expressway, Lagos, Nigeria",
     addressLines: ["13/15, Olabisi Seriki Street,(By Celestial Church) Opposite Fara park Estate, Abijo Lekki-Epe Expressway, Lagos, Nigeria"],
     phone: "+234 703 711 6014",
-    email: "hello@example.com",
+    email: "info@texcelschool.com",
     whatsapp: "234811453435",
     whatsappMessage: "Hello, I would like to know more about Texcel Schools.",
     openingHours: "Monday to Friday, 8:00am–4:00pm",
