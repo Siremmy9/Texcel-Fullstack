@@ -41,6 +41,9 @@ export function HomeView() {
                 <a href={waHref(site.config)} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-[50px] items-center gap-2 rounded-full border-2 border-white/65 bg-white/5 px-6 font-bold text-white no-underline backdrop-blur-sm hover:-translate-y-0.5 hover:bg-white hover:text-wine-deep">
                   <Icon name="whatsapp" size={18} /> WhatsApp
                 </a>
+                 <a href="/admin#login" className="inline-flex min-h-[50px] items-center rounded-full border-2 border-white/65 bg-white/5 px-6 font-bold text-white no-underline backdrop-blur-sm hover:-translate-y-0.5 hover:bg-white hover:text-wine-deep">
+                  Admin Login
+                </a>
               </div>
             </div>
             <div className="absolute inset-x-0 bottom-7">

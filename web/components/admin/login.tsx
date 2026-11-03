@@ -33,7 +33,7 @@ export function LoginView() {
     <div className="grid min-h-screen lg:grid-cols-2">
       <aside className="hidden bg-wine-deep p-12 text-white lg:flex lg:flex-col lg:justify-end">
         <p className="font-display text-5xl">Texcel Schools</p>
-        <p className="mt-3 text-gold">Integrity & Excellence</p>
+        <p className="mt-3 text-gold">Raising The Joy of Nations</p>
       </aside>
       <main className="grid place-items-center px-5 py-16">
         <form onSubmit={onSubmit} className="w-full max-w-md">
