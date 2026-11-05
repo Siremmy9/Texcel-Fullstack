@@ -376,27 +376,27 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
   const item = items[index];
 
   return (
-    <div className="mx-auto max-w-3xl text-center" role="region" aria-roledescription="carousel" aria-label="Parent testimonials">
+    <div className="mx-auto max-w-3xl rounded-3xl bg-white p-6 text-center text-wine-deep shadow-card sm:p-10" role="region" aria-roledescription="carousel" aria-label="Parent testimonials">
       <blockquote>
-        <p className="font-display text-2xl leading-snug text-white md:text-3xl">“{item.quote}”</p>
+        <p className="font-display text-2xl leading-snug text-wine-deep md:text-3xl">“{item.quote}”</p>
       </blockquote>
       <div className="mt-6 flex items-center justify-center gap-3">
         {item.photo ? (
           <img src={media(item.photo)} alt="" className="h-12 w-12 rounded-full object-cover" />
         ) : null}
-        <p className="text-left text-white/90">
+        <p className="text-left text-wine-deep">
           <strong className="block">{item.name}</strong>
-          <span className="text-sm text-white/70">{item.childClass}</span>
+          <span className="text-sm text-muted">{item.childClass}</span>
         </p>
       </div>
       <div className="mt-6 flex items-center justify-center gap-3">
-        <button type="button" className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white" aria-label="Previous testimonial" onClick={() => setIndex((index + items.length - 1) % items.length)}>
+        <button type="button" className="grid h-10 w-10 place-items-center rounded-full bg-wine-soft text-wine" aria-label="Previous testimonial" onClick={() => setIndex((index + items.length - 1) % items.length)}>
           <Icon name="chevL" />
         </button>
         {items.map((entry, dot) => (
-          <button key={entry.id} type="button" aria-label={`Show testimonial ${dot + 1}`} aria-current={dot === index ? "true" : undefined} onClick={() => setIndex(dot)} className={`h-2.5 w-2.5 rounded-full ${dot === index ? "bg-gold" : "bg-white/40"}`} />
+          <button key={entry.id} type="button" aria-label={`Show testimonial ${dot + 1}`} aria-current={dot === index ? "true" : undefined} onClick={() => setIndex(dot)} className={`h-2.5 w-2.5 rounded-full ${dot === index ? "bg-gold" : "bg-wine/20"}`} />
         ))}
-        <button type="button" className="grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white" aria-label="Next testimonial" onClick={() => setIndex((index + 1) % items.length)}>
+        <button type="button" className="grid h-10 w-10 place-items-center rounded-full bg-wine-soft text-wine" aria-label="Next testimonial" onClick={() => setIndex((index + 1) % items.length)}>
           <Icon name="chevR" />
         </button>
       </div>
