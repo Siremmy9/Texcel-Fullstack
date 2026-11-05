@@ -217,15 +217,15 @@ export function CtaBand({
   config: SchoolConfig;
 }) {
   return (
-    <section className="bg-gold">
+    <section className="bg-[#0B1730] text-white">
       <div className="mx-auto max-w-site px-5 py-16 text-center">
-        <h2 className="font-display text-4xl text-wine-deep">{title}</h2>
-        <p className="mx-auto mt-3 max-w-2xl text-ink/80">{text}</p>
+        <h2 className="font-display text-4xl text-white">{title}</h2>
+        <p className="mx-auto mt-3 max-w-2xl text-white/80">{text}</p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <Link href="/admissions#apply" className="rounded-full bg-wine px-5 py-3 font-semibold text-white no-underline">
+          <Link href="/admissions#apply" className="rounded-full bg-gold px-5 py-3 font-semibold text-ink no-underline">
             Apply for Admission
           </Link>
-          <a href={waHref(config)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-wine-deep/30 px-5 py-3 font-semibold text-wine-deep no-underline">
+          <a href={waHref(config)} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/50 px-5 py-3 font-semibold text-white no-underline">
             <Icon name="whatsapp" size={18} /> Chat on WhatsApp
           </a>
         </div>

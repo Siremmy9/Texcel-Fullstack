@@ -144,7 +144,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
 
       <div>{children}</div>
 
-      <footer className="bg-wine-deep text-white">
+      <footer className="bg-[#081225] text-white">
         <div className="mx-auto grid max-w-site gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="font-display text-2xl">{name}</p>
