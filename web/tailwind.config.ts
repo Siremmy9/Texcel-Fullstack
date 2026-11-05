@@ -9,18 +9,18 @@ const config: Config = {
     extend: {
       colors: {
         wine: {
-          DEFAULT: "#0B2545",
-          deep: "#081A30",
-          soft: "#E8EEF6",
+          DEFAULT: "#121F3E",
+          deep: "#121F3E",
+          soft: "#E8EDF5",
         },
         gold: {
-          DEFAULT: "#1788d4",
+          DEFAULT: "#F4C430",
           deep: "#8a6808",
         },
-        ink: "#26181e",
-        muted: "#5f5158",
-        line: "#e8dfe3",
-        tint: "#f7f2f4",
+        ink: "#121F3E",
+        muted: "#5f6470",
+        line: "#dce2ed",
+        tint: "#f4f6fa",
         forest: "#1e6b3f",
       },
       fontFamily: {
@@ -31,7 +31,7 @@ const config: Config = {
         site: "1180px",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(60,10,25,.06), 0 18px 40px -18px rgba(60,10,25,.28)",
+        card: "0 1px 2px rgba(18,31,62,.06), 0 18px 40px -18px rgba(18,31,62,.2)",
       },
     },
   },

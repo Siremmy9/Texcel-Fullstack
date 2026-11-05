@@ -11,7 +11,7 @@ export function HomeView() {
     <SiteData>
       {(site) => (
         <main id="main">
-          <section className="relative flex min-h-svh items-center overflow-hidden bg-[#220510] text-white">
+          <section className="relative flex min-h-svh items-center overflow-hidden bg-wine-deep text-white">
             <video
               className="absolute inset-0 h-full w-full object-cover"
               autoPlay
@@ -23,7 +23,7 @@ export function HomeView() {
             >
               <source src={media(site.config.heroVideo)} type="video/mp4" />
             </video>
-            <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(34,5,16,0.93)_0%,rgba(34,5,16,0.74)_46%,rgba(34,5,16,0.35)_100%),linear-gradient(0deg,rgba(34,5,16,0.8)_0%,transparent_38%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(100deg,rgba(18,31,62,0.93)_0%,rgba(18,31,62,0.74)_46%,rgba(18,31,62,0.35)_100%),linear-gradient(0deg,rgba(18,31,62,0.8)_0%,transparent_38%)]" />
             <div className="pointer-events-none absolute bottom-0 right-[max(4vw,1rem)] hidden aspect-[3/4] w-[min(34vw,430px)] rounded-t-[999px] border-2 border-b-0 border-gold/75 min-[1000px]:block" aria-hidden="true">
               <div className="absolute inset-[18px] rounded-t-[999px] border border-b-0 border-white/30" />
             </div>
@@ -32,7 +32,7 @@ export function HomeView() {
               <p className="mt-3 font-display text-[clamp(1.5rem,3vw,2.5rem)] italic leading-tight text-gold">{site.config.heroSubtitle}</p>
               <p className="mt-4 max-w-xl text-lg text-white/90">{site.config.heroText}</p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link href="/admissions#apply" className="inline-flex min-h-[50px] items-center rounded-full bg-gold px-6 font-bold text-[#240d15] no-underline shadow-[0_8px_22px_-10px_rgba(138,104,8,0.8)] hover:-translate-y-0.5">
+                <Link href="/admissions#apply" className="inline-flex min-h-[50px] items-center rounded-full bg-gold px-6 font-bold text-ink no-underline shadow-[0_8px_22px_-10px_rgba(138,104,8,0.8)] hover:-translate-y-0.5">
                   Apply for Admission
                 </Link>
                 <a href="#schools" className="inline-flex min-h-[50px] items-center rounded-full border-2 border-white/65 bg-white/5 px-6 font-bold text-white no-underline backdrop-blur-sm hover:-translate-y-0.5 hover:bg-white hover:text-wine-deep">

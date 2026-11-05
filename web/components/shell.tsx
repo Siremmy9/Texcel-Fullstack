@@ -52,7 +52,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
       <header
         className={`fixed inset-x-0 top-0 z-40 transition duration-300 ${
           scrolled
-            ? "bg-white/95 text-wine-deep shadow-[0_6px_24px_-12px_rgba(60,10,25,0.3)] backdrop-blur-md"
+            ? "bg-white/95 text-wine-deep shadow-[0_6px_24px_-12px_rgba(18,31,62,0.3)] backdrop-blur-md"
             : "bg-transparent text-white"
         }`}
       >
@@ -73,7 +73,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
                     href={href}
                     aria-current={active(href) ? "page" : undefined}
                     className={`block rounded-full px-3 py-2 text-[0.95rem] font-semibold text-inherit no-underline ${
-                      active(href) ? "rounded-none shadow-[inset_0_-3px_0_#d4a017]" : scrolled ? "hover:bg-wine-soft hover:text-wine" : "hover:bg-white/15"
+                      active(href) ? "rounded-none shadow-[inset_0_-3px_0_#F4C430]" : scrolled ? "hover:bg-wine-soft hover:text-wine" : "hover:bg-white/15"
                     }`}
                   >
                     {label}
@@ -96,7 +96,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
             )}
             <Link
               href="/admissions#apply"
-              className="hidden min-h-11 items-center rounded-full bg-gold px-5 text-sm font-bold text-[#240d15] no-underline shadow-[0_8px_22px_-10px_rgba(138,104,8,0.8)] min-[1180px]:inline-flex"
+              className="hidden min-h-11 items-center rounded-full bg-gold px-5 text-sm font-bold text-ink no-underline shadow-[0_8px_22px_-10px_rgba(138,104,8,0.8)] min-[1180px]:inline-flex"
             >
               Apply
             </Link>

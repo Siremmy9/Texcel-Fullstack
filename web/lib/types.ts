@@ -7,6 +7,20 @@ export type Level = {
   classes: string[];
 };
 
+export type CampusKey = "primary" | "secondary";
+
+export type CampusInfo = {
+  name: string;
+  principalName: string;
+  principalTitle: string;
+  principalImage: string;
+  welcomeMessage: string;
+  address: string;
+  whatsapp: string;
+  whatsappMessage: string;
+  mapUrl: string;
+};
+
 export type SchoolConfig = {
   name: string;
   tagline: string;
@@ -25,11 +39,18 @@ export type SchoolConfig = {
   heroPoster: string;
   images: Record<string, string>;
   mapUrl: string;
+  campuses?: Partial<Record<CampusKey, CampusInfo>>;
   social: { facebook: string; instagram: string; youtube: string; tiktok: string };
   designer: string;
   stats: { years: number; students: number; staff: number; programs: number };
   levels: Level[];
   about: { intro: string; mission: string; mandate: string; activities: string };
+  proprietressWelcome?: {
+    name: string;
+    title: string;
+    image: string;
+    message: string;
+  };
   values: { title: string; icon: string; text: string }[];
   admissionSteps: { title: string; text: string }[];
   galleryCategories: string[];

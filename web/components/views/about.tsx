@@ -20,6 +20,24 @@ export function AboutView() {
               <img src={media(site.config.images.about)} alt="Pupils and teachers at the school" />
             </div>
           </section>
+          {site.config.proprietressWelcome && (
+            <section className="bg-tint py-16">
+              <div className="mx-auto grid max-w-site items-center gap-10 px-5 md:grid-cols-[1.2fr_0.8fr]">
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-wide text-gold-deep">A welcome from our Proprietress</p>
+                  <h2 className="mt-2 font-display text-4xl text-wine-deep">{site.config.proprietressWelcome.name}</h2>
+                  <p className="mt-1 font-semibold text-wine">{site.config.proprietressWelcome.title}</p>
+                  <p className="mt-5 whitespace-pre-line text-lg leading-relaxed text-muted">{site.config.proprietressWelcome.message}</p>
+                </div>
+                <div className="arch mx-auto h-[420px] w-full max-w-sm">
+                  <img
+                    src={media(site.config.proprietressWelcome.image)}
+                    alt={`Portrait of ${site.config.proprietressWelcome.name}`}
+                  />
+                </div>
+              </div>
+            </section>
+          )}
           <section className="bg-tint py-20">
             <div className="mx-auto max-w-site px-5">
               <SectionHead title="Mission, vision and philosophy" />

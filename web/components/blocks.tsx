@@ -131,6 +131,14 @@ export function LevelBlocks({ site }: { site: SitePayload }) {
               <Link href={`/admissions?level=${level.id}#apply`} className="rounded-full bg-wine px-5 py-2.5 text-sm font-semibold text-white no-underline">
                 Apply to {level.name}
               </Link>
+              {(level.id === "primary" || level.id === "college") && (
+                <Link
+                  href={level.id === "primary" ? "/schools/primary" : "/schools/secondary"}
+                  className="inline-flex items-center rounded-full border border-wine px-5 py-2.5 text-sm font-semibold text-wine no-underline"
+                >
+                  Explore {level.id === "primary" ? "Primary" : "Secondary"} School
+                </Link>
+              )}
               <a
                 href={waHref(site.config, `Hello ${site.config.name}, I would like to know more about your ${level.name} section.`)}
                 target="_blank"
