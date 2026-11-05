@@ -71,7 +71,7 @@ export function HomeView() {
                 </Link>
               </div>
             </div>
-            <div className="arch mx-auto h-[460px] w-full max-w-md">
+            <div className="arch !rounded-[15px] overflow-hidden">
               <img src={media(site.config.images.about)} alt="Pupils learning together at the school" />
             </div>
           </section>

@@ -18,11 +18,11 @@ export const mockSite: SitePayload = {
     heroVideo: "/assets/videos/school-hero.mp4",
     heroPoster: "/assets/images/eaglebuilding.jpg",
     images: {
-      about: "/assets/images/eaglearound.jpg",
-      creche: "/assets/images/creche.jpg",
-      preschool: "/assets/images/eaglestudent.jpg",
-      primary: "/assets/images/primary.jpg",
-      college: "/assets/images/secondary.jpg",
+      about: "/assets/images/facilities/building.jpg",
+      creche: "/assets/images/facilities/kids.jpg",
+      preschool: "/assets/images/facilities/class.jpg",
+      primary: "/assets/images/facilities/pryAssembly.jpg",
+      college: "/assets/images/facilities/assembly.jpg",
     },
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.354431716398!2d3.6541889749924574!3d6.471305993520402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf951eaf38345%3A0x13eb1c618447402b!2sTeresh%20Eternal%20Excellence%20School%20(Texcels)!5e1!3m2!1sen!2sng!4v1793456988610!5m2!1sen!2sng",
     social: { facebook: "https://web.facebook.com/TEXCELS/?_rdc=1&_rdr#", instagram: "https://www.instagram.com/texcel_schools/", youtube: "https://youtube.com/@TEXCELSchools?si=2tks3uSxIaijQB-X", tiktok: "https://www.tiktok.com/search?q=texcel%20schools&t=1793475923849" },
@@ -56,25 +56,46 @@ export const mockSite: SitePayload = {
     galleryCategories: ["Learning", "Campus", "Activities"],
   },
   staff: [
-    { id: "preview-staff-1", name: "Mrs Olufadeji Foluso", role: "Propiertress", photo: "/assets/images/staff1.jpg" },  
-    { id: "preview-staff-5", name: "Mrs. A. Johnson", role: "Principal", photo: "/assets/images/staff1.jpg" },
-    { id: "preview-staff-2", name: "Mr Odeniyi", role: "Principal", photo: "/assets/images/staff1.jpg" },
-    { id: "preview-staff-3", name: "Mrs. A. Johnson", role: "Admin", photo: "/assets/images/staff1.jpg" },
-    { id: "preview-staff-4", name: "Mrs. Adeleke", role: "Head Mistress", photo: "/assets/images/staff1.jpg" },
+    { id: "preview-staff-1", name: "Mrs Olufadeji Foluso", role: "Propiertress", photo: "/assets/images/facilities/propiertress.jpg" },  
+    { id: "preview-staff-5", name: "Mr. Odeyemi", role: "Principal", photo: "/assets/images/facilities/logo.jpg" },
+    { id: "preview-staff-3", name: "Mrs. A. Johnson", role: "Admin", photo: "/assets/images/facilities/logo.jpg" },
+    { id: "preview-staff-4", name: "Mrs. Adeleke", role: "Head Mistress", photo: "/assets/images/facilities/mistress.jpeg" },
 
   ],
   gallery: [
-    { id: "preview-reading", image: "/assets/images/gallery/reading.jpg", caption: "A moment of shared reading", category: "Learning" },
-    { id: "preview-assembly", image: "/assets/images/gallery/assembly.jpg", caption: "Together at assembly", category: "Activities" },
-    { id: "preview-campus", image: "/assets/images/gallery/eaglesbuilding.jpg", caption: "Our school campus", category: "Campus" },
-    { id: "preview-arts", image: "/assets/images/gallery/arts.jpg", caption: "Creating through the arts", category: "Activities" },
-    { id: "preview-library", image: "/assets/images/gallery/library.jpg", caption: "Exploring new stories", category: "Learning" },
-    { id: "preview-playground", image: "/assets/images/gallery/playground.jpg", caption: "Time to play", category: "Campus" },
+    { id: "preview-reading", image: "assets/images/facilities/admission.jpg", caption: "A moment of shared reading", category: "Learning" },
+    { id: "preview-assembly", image: "assets/images/facilities/prybuilding.jpg", caption: "Primary School building", category: "Activities" },
+    { id: "preview-campus", image: "assets/images/facilities/exc.jpg", caption: "Outdoor learning", category: "students" },
+    { id: "preview-arts", image: "assets/images/gallery/computerlab.jpg", caption: "Computer Lab", category: "ICT Laboratory" },
+    { id: "preview-library", image: "assets/images/facilities/graduation.jpg", caption: "Graduation Day", category: "Graduation" },
+    { id: "preview-student", image: "assets/images/facilities/hero.jpg", caption: "School Student", category: "students" },
+    { id: "preview-music", image: "assets/images/facilities/musicstudent.jpg", caption: "Music Class", category: "Outdoor Activities" },
+    { id: "preview-around", image: "assets/images/facilities/assembly.jpg", caption: "School Assembly", category: "students" },
+    { id: "preview-sport", image: "assets/images/facilities/sport.jpg", caption: "School Sport", category: "Outdoor Activities" },
+    { id: "preview-playground", image: "assets/images/gallery/playground.jpg", caption: "School Playground", category: "Outdoor Activities" },
+    { id: "preview-art", image: "assets/images/gallery/arts.jpg", caption: "Art Lessons", category: "students" },
+    { id: "preview-openday", image: "assets/images/gallery/openday.jpg", caption: "Open Day", category: "Events" },
+    { id: "preview-wazobia", image: "assets/images/facilities/wazobia.jpg", caption: "Wazobia Visit", category: "Events" },
+    { id: "preview-firstaid", image: "assets/images/facilities/firstaid.jpg", caption: "First Aid", category: "Facilities" },
+    { id: "preview-bus", image: "assets/images/gallery/bus.jpg", caption: "School Bus", category: "Bus" },
+
+
+
+
+
   ],
   news: [
-    { id: "preview-news-1", title: "Welcome to a new school term", category: "School News", date: "2026-09-01", image: "/assets/images/news/eagleadmission.jpg", published: true, excerpt: "We look forward to a term full of discovery and achievement.", content: "Our school community is ready for a new term of learning, friendship, and fresh opportunities." },
-    { id: "preview-news-2", title: "Celebrating learning and creativity", category: "Activities", date: "2026-08-15", image: "/assets/images/news/cultural.jpg", published: true, excerpt: "Students share their talents and celebrate their progress.", content: "A celebration of the creativity, effort, and progress shown by our students." },
-    { id: "preview-news-3", title: "Admissions enquiry preview", category: "Admissions", date: "2026-08-01", image: "/assets/images/news/eagleflyer.jpg", published: true, excerpt: "Explore the school sections and learn about the admissions process.", content: "Contact the school office for current admissions information." },
+    { id: "preview-news-1", title: "Welcome to a new school term School Admission is open", category: "School News", date: "2026-09-01", image: "/assets/images/facilities/admission.jpg", published: true, excerpt: "We look forward to a term full of discovery and achievement.", content: "Our school community is ready for a new term of learning, friendship, and fresh opportunities." },
+    { id: "preview-news-2", title: "After-School Services", category: "Activities", date: "2026-08-15", image: "/assets/images/facilities/aftschool.jpg", published: true, excerpt: "Enroll your kids for after-school activities.", content: "Enroll your kids for after-school activities." },
+    { id: "preview-news-3", title: "Inter-House Sports", category: " Sports", date: "2026-08-01", image: "/assets/images/facilities/sport.jpg", published: true, excerpt: "Explore the school sections and learn about the admissions process.", content: "Contact the school office for current admissions information." },
+    { id: "preview-news-4", title: "Graduation Ceremony", category: " graduation", date: "2026-08-01", image: "/assets/images/facilities/Graduation.jpg", published: true, excerpt: "Explore the school sections and learn about the admissions process.", content: "Contact the school office for current admissions information." },
+    { id: "preview-news-5", title: "Parents Meeting", category: " Parents", date: "2026-08-01", image: "/assets/images/facilities/kidsteachers.jpg", published: true, excerpt: "Explore the school sections and learn about the admissions process.", content: "Contact the school office for current admissions information." },
+    { id: "preview-news-6", title: "Cultural Day", category: " Events", date: "2026-08-01", image: "/assets/images/facilities/drama.jpg", published: true, excerpt: "Explore the school sections and learn about the admissions process.", content: "Contact the school office for current admissions information." },
+    { id: "preview-news-7", title: "Music Festival", category: " Events", date: "2026-08-01", image: "/assets/images/facilities/sax.jpg", published: true, excerpt: "Explore the school sections and learn about the admissions process.", content: "Contact the school office for current admissions information." },
+    { id: "preview-news-8", title: "Christmas Celebration", category: " Events", date: "2026-12-17", image: "/assets/images/facilities/christmas.jpg", published: true, excerpt: "Explore the school sections and learn about the admissions process.", content: "Contact the school office for current admissions information." },
+
+
+
   ],
   facilities: [
     { id: "preview-library", title: "Library", description: "A welcoming space for reading, research, and discovery.", image: "/assets/images/gallery/library.jpg" },

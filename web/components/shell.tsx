@@ -157,6 +157,35 @@ export function Shell({ children }: { children: React.ReactNode }) {
               
               
             )}
+            {config?.social && (
+              <div className="mt-6">
+                <h2 className="font-display text-lg text-gold">Follow us</h2>
+                <ul className="mt-3 flex gap-3">
+                  {(
+                    [
+                      ["facebook", "Facebook"],
+                      ["instagram", "Instagram"],
+                      ["youtube", "YouTube"],
+                      ["tiktok", "TikTok"],
+                    ] as const
+                  )
+                    .filter(([platform]) => Boolean(config.social[platform]))
+                    .map(([platform, label]) => (
+                      <li key={platform}>
+                        <a
+                          href={config.social[platform]}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Visit our ${label} page`}
+                          className="grid h-10 w-10 place-items-center rounded-full border border-white/25 text-white/85 no-underline transition hover:border-gold hover:bg-gold hover:text-ink"
+                        >
+                          <Icon name={platform} size={20} />
+                        </a>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            )}
           </div>
 
           
