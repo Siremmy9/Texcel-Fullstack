@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { PageHero } from "@/components/blocks";
 import { Icon } from "@/components/icons";
 import { SiteData } from "@/components/shell";
@@ -53,6 +54,20 @@ export function SchoolCampusView({ campusKey }: { campusKey: CampusKey }) {
                 <h2 className="mt-2 font-display text-4xl text-wine-deep">{campus.principalName}</h2>
                 <p className="mt-1 font-semibold text-wine">{campus.principalTitle}</p>
                 <p className="mt-5 whitespace-pre-line text-lg leading-relaxed text-muted">{campus.welcomeMessage}</p>
+                <div className="mt-7 flex flex-wrap gap-3">
+                  <Link
+                    href={`/admissions?level=${campusKey === "primary" ? "primary" : "college"}#apply`}
+                    className="inline-flex items-center rounded-full bg-wine px-5 py-3 font-semibold text-white no-underline"
+                  >
+                    Apply for admission
+                  </Link>
+                  <Link
+                    href="/schools"
+                    className="inline-flex items-center rounded-full border border-wine px-5 py-3 font-semibold text-wine no-underline"
+                  >
+                    Back to schools
+                  </Link>
+                </div>
               </div>
               <div className="mx-auto w-full max-w-sm">
                 {campus.principalImage ? (
@@ -93,20 +108,22 @@ export function SchoolCampusView({ campusKey }: { campusKey: CampusKey }) {
                     </p>
                   )}
                 </div>
-                <div className="overflow-hidden rounded-3xl bg-white shadow-card">
-                  {mapOk ? (
-                    <iframe
-                      title={`Map showing ${campus.name}`}
-                      src={campus.mapUrl}
-                      className="h-[360px] w-full border-0"
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                    />
-                  ) : (
-                    <p className="grid min-h-[360px] place-items-center px-8 text-center text-muted">
-                      Add a Google Maps embed URL for this campus in the config.
-                    </p>
-                  )}
+                <div>
+                  <div className="overflow-hidden rounded-3xl bg-white shadow-card">
+                    {mapOk ? (
+                      <iframe
+                        title={`Map showing ${campus.name}`}
+                        src={campus.mapUrl}
+                        className="h-[360px] w-full border-0"
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                      />
+                    ) : (
+                      <p className="grid min-h-[360px] place-items-center px-8 text-center text-muted">
+                        Add a Google Maps embed URL for this campus in the config.
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
             </section>
