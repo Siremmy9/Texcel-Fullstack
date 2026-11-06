@@ -176,13 +176,14 @@ export function AboutCards({ about }: { about: SchoolConfig["about"] }) {
     ["Educational Philosophy", about.mission],
     ["Our Mandate", about.mandate],
     ["Our Activities", about.activities],
+    ...(about.anthem ? [["School Anthem", about.anthem]] : []),
   ];
   return (
-    <div className="grid gap-5 md:grid-cols-3">
+    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
       {cards.map(([title, text]) => (
         <article key={title} className="rounded-2xl bg-white p-6 shadow-card">
           <h3 className="font-display text-2xl text-wine-deep">{title}</h3>
-          <p className="mt-3 text-muted">{text}</p>
+          <p className="mt-3 whitespace-pre-line text-muted">{text}</p>
         </article>
       ))}
     </div>

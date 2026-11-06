@@ -44,7 +44,7 @@ export type SchoolConfig = {
   designer: string;
   stats: { years: number; students: number; staff: number; programs: number };
   levels: Level[];
-  about: { intro: string; mission: string; mandate: string; activities: string };
+  about: { intro: string; mission: string; mandate: string; activities: string; anthem?: string };
   proprietressWelcome?: {
     name: string;
     title: string;

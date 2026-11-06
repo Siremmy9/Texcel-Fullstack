@@ -64,6 +64,7 @@ export const mockSite: SitePayload = {
       mission: "We are dedicated to inspire, nurture and educate children in a conducive, safe and prepared environment through highly skilled professionals, making learning easier for children and developing them to become seasoned future leaders and Joy of Many Nations.",
       mandate: "To raise children that are excellent morally and academically, ultimately becoming solid and responsible future leaders.",
       activities: "Learning is enriched through sports, creative arts, technology, and community activities.",
+      anthem: "Add the school anthem lyrics here in the config.",
     },
     proprietressWelcome: {
       name: "Mrs Olufadeji Foluso",
